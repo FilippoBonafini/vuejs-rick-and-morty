@@ -1,13 +1,13 @@
 <script>
 export default {
-    name: 'Hello!'
+    name: 'Header'
 }
 </script>
 
 <template>
-    <div>
-        <h1>Hello world!</h1>
-    </div>
+    <header>
+        <h1>Rick and Morty</h1>
+    </header>
 </template>
 
 

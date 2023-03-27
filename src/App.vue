@@ -1,20 +1,26 @@
 <!-- JAVA SCRIPT  -->
 <script>
 // IMPORTIAMO COMPONENTI 
-import HelloApp from './components/HelloApp.vue';
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
   name: 'App',
   // DICHIARIAMO I COMPONENTI 
   components: {
-    HelloApp
+    AppHeader,
+    AppMain,
+    AppFooter
   }
 }
 </script>
 
 <!-- HTML -->
 <template>
-  <HelloApp />
+  <AppHeader />
+  <AppMain />
+  <AppFooter />
 </template>
 
 <!-- CSS  -->
