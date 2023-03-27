@@ -1,13 +1,17 @@
 <script>
+import CharacterSearch from './CharacterSearch.vue';
 export default {
-    name: 'Main'
+    name: 'Main',
+    components: {
+        CharacterSearch
+    }
 }
 </script>
 
 <template>
-    <div>
-        Main
-    </div>
+    <main>
+        <CharacterSearch />
+    </main>
 </template>
 
 
