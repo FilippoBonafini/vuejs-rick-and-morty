@@ -6,13 +6,23 @@ export default {
     components: {
         CharacterSearch,
         CharacterList
+    },
+    methods: {
+        search() {
+            console.log('Lancio un emit')
+            this.$emit('search')
+        },
+        reset() {
+            console.log('resetto i risultati')
+            this.$emit('reset')
+        }
     }
 }
 </script>
 
 <template>
     <main>
-        <CharacterSearch />
+        <CharacterSearch @search="search()" @reset=reset() />
         <CharacterList />
     </main>
 </template>

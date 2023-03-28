@@ -21,7 +21,7 @@ export default {
     <div class="container">
         <div class="row g-5">
             <div class="col-12 col-sm-3" v-for="character in store.characters">
-                <CharacterCard :img="character.image" :name="character.name" :status="status"
+                <CharacterCard :img="character.image" :name="character.name" :status="character.status"
                     :species="character.species" />
             </div>
         </div>
