@@ -31,7 +31,7 @@ export default {
                 </div>
                 <div class="mb-3 col-12 col-sm-auto">
                     <button type="submit" class="btn btn-primary me-1">Search</button>
-                    <button type="reset" class="btn btn-secondary" @click="$emit('reset')">Reset</button>
+                    <button type="reset" class="btn btn-secondary" @click.prevent="$emit('reset')">Reset</button>
                 </div>
             </div>
         </form>
